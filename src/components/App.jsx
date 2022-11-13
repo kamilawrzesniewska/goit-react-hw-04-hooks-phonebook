@@ -93,7 +93,7 @@ render() {
           display: 'flex',
           height: '100%',
           fontSize: 30,
-          color: '#010456',
+          color: '#010455',
           background: '#888b8d2a',
         }}
       >

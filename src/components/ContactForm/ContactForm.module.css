@@ -1,0 +1,37 @@
+.form {
+    flex-direction: column;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    color: #021741;
+    border-radius: 10px;
+    border-color: #5f6061;
+    align-items: center;
+    margin-top: -30px;
+  }
+  
+  .input {
+    display: block;
+    width: 155px;
+    margin: 10px;
+  }
+  
+  .btn{
+    width: 120px;
+    background-color: #b5f3f0;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(87, 90, 93, 0.04) 0 1px 0;
+    list-style: none;
+    user-select: none;
+    color: #24292e;
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+  }
+  
+  
+  .btn:active {
+    background-color: #59f9f9;
+    box-shadow: rgba(90, 92, 93, 0.2);
+  }

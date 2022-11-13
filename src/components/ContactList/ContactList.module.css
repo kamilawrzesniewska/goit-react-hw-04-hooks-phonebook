@@ -1,0 +1,31 @@
+.contactList {
+    margin-left: 25px;
+    list-style: none;
+    font-size: 25px;
+    color: #24292e;
+    margin-right: 20px;
+  }
+  
+  .contactItem:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  .btn {
+    width: 120px;
+    background-color: #b5f3f0;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(87, 90, 93, 0.04) 0 1px 0;
+    user-select: none;
+    color: #24292e;
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    margin: 10px;
+  }
+  
+  
+  
+  

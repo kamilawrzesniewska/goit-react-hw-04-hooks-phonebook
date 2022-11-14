@@ -1,29 +1,32 @@
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import styles from './ContactList.module.css';
 
-export const ContactList = ({ filterArray, onDelete }) => {
-  return (
+export const ContactList = ({ filterArray, onDelete  }) => (
+  
     <ul className={styles.contactList}>
-      {filterArray().map(contact => (
-        <li key={contact.id} className={styles.contactItem}>
-          <span className={styles.paragraph}>
-            {contact.name}: {contact.number}
-          </span>
+      {filterArray.map((contact, id) => (
+        <li key={id} className={styles.contactItem}>
+          {contact.name}: {contact.number}
           <button
             type="button"
             className={styles.btn}
-            onClick={() => onDelete(contact.id)}
+            onClick={() => onDelete (contact.id)}
           >
             Delete
           </button>
         </li>
       ))}
     </ul>
-  );
-};
+
+);
 
 ContactList.propTypes = {
-  onDelete: PropTypes.func.isRequired,
-  filterArray: PropTypes.func.isRequired,
+  filterArray: propTypes.arrayOf(
+    propTypes.exact({
+      id: propTypes.string.isRequired,
+      name: propTypes.string.isRequired,
+      number: propTypes.string.isRequired,
+    })
+  ),
+  onDelete : propTypes.func.isRequired,
 };
-
